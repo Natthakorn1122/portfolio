@@ -7,17 +7,20 @@
 
     <title>Portfolio | ณัฐกร ดาวเรือง</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
 
     <style>
 
-        /* =========================================
+        /* =====================================================
            RESET
-        ========================================= */
+        ===================================================== */
 
         * {
             margin: 0;
@@ -34,34 +37,35 @@
             background: #f8fbff;
             color: #27364b;
             line-height: 1.7;
+            overflow-x: hidden;
         }
 
-
-        /* =========================================
-           COLORS
-        ========================================= */
+        img {
+            max-width: 100%;
+        }
 
         :root {
             --primary: #7c9cff;
             --primary-dark: #5d7fe8;
             --blue-light: #eaf0ff;
             --purple: #b69cff;
+            --pink: #ffb9d5;
             --text: #27364b;
             --text-light: #718096;
             --white: #ffffff;
         }
 
 
-        /* =========================================
+        /* =====================================================
            NAVBAR
-        ========================================= */
+        ===================================================== */
 
         .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
 
-            background: rgba(255, 255, 255, 0.88);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(15px);
 
             border-bottom: 1px solid rgba(124, 156, 255, 0.15);
@@ -71,11 +75,11 @@
             width: min(1100px, 90%);
             margin: auto;
 
+            min-height: 70px;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            min-height: 70px;
         }
 
         .logo {
@@ -92,13 +96,16 @@
 
         nav {
             display: flex;
+            align-items: center;
             gap: 25px;
         }
 
         nav a {
             text-decoration: none;
             color: var(--text);
+
             font-size: 0.95rem;
+
             transition: 0.3s;
         }
 
@@ -120,9 +127,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            HERO
-        ========================================= */
+        ===================================================== */
 
         .hero {
             min-height: calc(100vh - 70px);
@@ -147,6 +154,7 @@
         .hero h1 {
             font-size: clamp(2.5rem, 6vw, 4.5rem);
             line-height: 1.2;
+
             margin: 10px 0;
         }
 
@@ -165,20 +173,23 @@
 
         .hero-description {
             max-width: 600px;
+
             color: var(--text-light);
+
             margin: 20px 0;
         }
 
         .hero-buttons {
             display: flex;
             gap: 15px;
+
             flex-wrap: wrap;
         }
 
 
-        /* =========================================
+        /* =====================================================
            BUTTON
-        ========================================= */
+        ===================================================== */
 
         .btn {
             display: inline-block;
@@ -200,7 +211,8 @@
             background: var(--primary);
             color: white;
 
-            box-shadow: 0 8px 20px rgba(124, 156, 255, 0.3);
+            box-shadow:
+                0 8px 20px rgba(124, 156, 255, 0.3);
         }
 
         .secondary {
@@ -209,9 +221,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            HERO IMAGE
-        ========================================= */
+        ===================================================== */
 
         .hero-image {
             position: relative;
@@ -222,9 +234,6 @@
 
             min-height: 430px;
         }
-
-
-        /* กรอบด้านนอก */
 
         .image-frame {
             width: 350px;
@@ -248,9 +257,6 @@
             animation: float 4s ease-in-out infinite;
         }
 
-
-        /* พื้นที่รูป */
-
         .image-circle {
             width: 100%;
             height: 100%;
@@ -268,30 +274,22 @@
             align-items: center;
         }
 
-
-        /* รูปภาพ */
-
         .profile-image {
             width: 100%;
             height: 100%;
 
             display: block;
 
-            /*
-             * cover = รูปเต็มพื้นที่กรอบ
-             * และไม่ให้รูปทะลุกรอบ
-             */
             object-fit: cover;
-
             object-position: center;
 
             border-radius: 50%;
         }
 
 
-        /* =========================================
+        /* =====================================================
            FLOATING CARDS
-        ========================================= */
+        ===================================================== */
 
         .floating-card {
             position: absolute;
@@ -325,9 +323,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            SECTION
-        ========================================= */
+        ===================================================== */
 
         .section {
             padding: 100px 5%;
@@ -354,9 +352,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            ABOUT
-        ========================================= */
+        ===================================================== */
 
         .about-container {
             width: min(1000px, 100%);
@@ -426,9 +424,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            SKILLS
-        ========================================= */
+        ===================================================== */
 
         .skills-container {
             width: min(1000px, 100%);
@@ -508,9 +506,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            PROJECT
-        ========================================= */
+        ===================================================== */
 
         .project-container {
             width: min(800px, 100%);
@@ -585,9 +583,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            ACTIVITIES
-        ========================================= */
+        ===================================================== */
 
         .activity-container {
             width: min(800px, 100%);
@@ -626,9 +624,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            CONTACT
-        ========================================= */
+        ===================================================== */
 
         .contact-section {
             background: linear-gradient(
@@ -693,9 +691,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            FOOTER
-        ========================================= */
+        ===================================================== */
 
         footer {
             text-align: center;
@@ -716,9 +714,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            ANIMATION
-        ========================================= */
+        ===================================================== */
 
         @keyframes float {
 
@@ -743,7 +741,9 @@
         }
 
 
-        /* Scroll Reveal */
+        /* =====================================================
+           SCROLL REVEAL
+        ===================================================== */
 
         .reveal {
             opacity: 0;
@@ -762,9 +762,9 @@
         }
 
 
-        /* =========================================
-           RESPONSIVE TABLET
-        ========================================= */
+        /* =====================================================
+           TABLET
+        ===================================================== */
 
         @media (max-width: 800px) {
 
@@ -806,8 +806,13 @@
                 padding: 70px 0;
             }
 
+            .hero-content {
+                order: 2;
+            }
+
             .hero-image {
-                order: -1;
+                order: 1;
+
                 min-height: 350px;
             }
 
@@ -851,11 +856,15 @@
         }
 
 
-        /* =========================================
-           RESPONSIVE MOBILE
-        ========================================= */
+        /* =====================================================
+           MOBILE
+        ===================================================== */
 
         @media (max-width: 500px) {
+
+            .nav-container {
+                width: 90%;
+            }
 
             .section {
                 padding: 70px 5%;
@@ -876,6 +885,7 @@
             .image-frame {
                 width: 220px;
                 height: 220px;
+
                 padding: 7px;
             }
 
@@ -888,6 +898,10 @@
                 flex-direction: column;
                 gap: 5px;
             }
+
+            .project-content {
+                padding: 25px;
+            }
         }
 
     </style>
@@ -897,7 +911,9 @@
 <body>
 
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- =====================================================
+         NAVBAR
+    ===================================================== -->
 
     <header class="navbar">
 
@@ -907,7 +923,12 @@
                 Folk<span>.</span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="เปิดเมนู"
+                type="button"
+            >
                 ☰
             </button>
 
@@ -928,7 +949,9 @@
 
 
 
-    <!-- ================= HERO ================= -->
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
 
     <section id="home" class="hero">
 
@@ -967,27 +990,23 @@
         </div>
 
 
-
-        <!-- ================= PROFILE IMAGE ================= -->
+        <!-- รูปโปรไฟล์ -->
 
         <div class="hero-image reveal">
 
-            <!-- กรอบรูป -->
             <div class="image-frame">
 
-                <!-- รูปจะไม่ทะลุกรอบ -->
                 <div class="image-circle">
 
                     <img
-                        src="34017.jpg"
-                        alt="รูปโปรไฟล์ของณัฐกร ดาวเรือง"
+                        src="./34017.jpg"
+                        alt="รูปโปรไฟล์ของ ณัฐกร ดาวเรือง"
                         class="profile-image"
                     >
 
                 </div>
 
             </div>
-
 
             <div class="floating-card card-1">
                 🎥 Video Editor
@@ -1003,7 +1022,9 @@
 
 
 
-    <!-- ================= ABOUT ================= -->
+    <!-- =====================================================
+         ABOUT
+    ===================================================== -->
 
     <section id="about" class="section">
 
@@ -1104,7 +1125,9 @@
 
 
 
-    <!-- ================= SKILLS ================= -->
+    <!-- =====================================================
+         SKILLS
+    ===================================================== -->
 
     <section id="skills" class="section light-section">
 
@@ -1141,8 +1164,8 @@
 
                     <div
                         class="skill-progress"
-                        style="width:80%;">
-                    </div>
+                        style="width: 80%;"
+                    ></div>
 
                 </div>
 
@@ -1173,8 +1196,8 @@
 
                     <div
                         class="skill-progress"
-                        style="width:75%;">
-                    </div>
+                        style="width: 75%;"
+                    ></div>
 
                 </div>
 
@@ -1205,8 +1228,8 @@
 
                     <div
                         class="skill-progress"
-                        style="width:85%;">
-                    </div>
+                        style="width: 85%;"
+                    ></div>
 
                 </div>
 
@@ -1222,7 +1245,9 @@
 
 
 
-    <!-- ================= PROJECTS ================= -->
+    <!-- =====================================================
+         PROJECTS
+    ===================================================== -->
 
     <section id="projects" class="section">
 
@@ -1252,7 +1277,7 @@
                     </span>
 
                     <h3>
-                        เค้าค่ายกีฬาสี
+                        ค่ายกีฬาสี
                     </h3>
 
                     <p>
@@ -1275,7 +1300,9 @@
 
 
 
-    <!-- ================= ACTIVITIES ================= -->
+    <!-- =====================================================
+         ACTIVITIES
+    ===================================================== -->
 
     <section id="activities" class="section light-section">
 
@@ -1301,7 +1328,7 @@
                 <div>
 
                     <h3>
-                        เค้าค่าย Incentive
+                        เข้าค่าย Incentive
                     </h3>
 
                     <p>
@@ -1347,7 +1374,9 @@
 
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- =====================================================
+         CONTACT
+    ===================================================== -->
 
     <section id="contact" class="section contact-section">
 
@@ -1390,7 +1419,9 @@
 
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
 
     <footer>
 
@@ -1406,40 +1437,35 @@
 
 
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
 
     <script>
 
-        /* =========================================
+        /* =====================================================
            MOBILE MENU
-        ========================================= */
+        ===================================================== */
 
-        const menuToggle =
-            document.getElementById("menuToggle");
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
 
-        const navMenu =
-            document.getElementById("navMenu");
-
-
-        menuToggle.addEventListener("click", () => {
+        menuToggle.addEventListener("click", function () {
 
             navMenu.classList.toggle("active");
 
         });
 
 
+        /* =====================================================
+           CLOSE MENU AFTER CLICK
+        ===================================================== */
 
-        /* =========================================
-           ปิดเมนูเมื่อกด Link
-        ========================================= */
+        const navLinks = document.querySelectorAll("nav a");
 
-        const navLinks =
-            document.querySelectorAll("nav a");
+        navLinks.forEach(function (link) {
 
-
-        navLinks.forEach(link => {
-
-            link.addEventListener("click", () => {
+            link.addEventListener("click", function () {
 
                 navMenu.classList.remove("active");
 
@@ -1448,29 +1474,25 @@
         });
 
 
-
-        /* =========================================
+        /* =====================================================
            SCROLL REVEAL
-        ========================================= */
+        ===================================================== */
 
         const revealElements =
             document.querySelectorAll(".reveal");
 
-
         const observer =
             new IntersectionObserver(
 
-                (entries) => {
+                function (entries) {
 
-                    entries.forEach(entry => {
+                    entries.forEach(function (entry) {
 
                         if (entry.isIntersecting) {
 
                             entry.target.classList.add("show");
 
-                            observer.unobserve(
-                                entry.target
-                            );
+                            observer.unobserve(entry.target);
 
                         }
 
@@ -1485,32 +1507,29 @@
             );
 
 
-        revealElements.forEach(element => {
+        revealElements.forEach(function (element) {
 
             observer.observe(element);
 
         });
 
 
-
-        /* =========================================
+        /* =====================================================
            ACTIVE NAVIGATION
-        ========================================= */
+        ===================================================== */
 
         const sections =
             document.querySelectorAll("section");
 
 
-        window.addEventListener("scroll", () => {
+        function updateActiveNavigation() {
 
             let currentSection = "";
 
-
-            sections.forEach(section => {
+            sections.forEach(function (section) {
 
                 const sectionTop =
-                    section.offsetTop - 100;
-
+                    section.offsetTop - 120;
 
                 if (window.scrollY >= sectionTop) {
 
@@ -1522,14 +1541,13 @@
             });
 
 
-            navLinks.forEach(link => {
+            navLinks.forEach(function (link) {
 
                 link.classList.remove("active");
 
-
                 if (
                     link.getAttribute("href") ===
-                    `#${currentSection}`
+                    "#" + currentSection
                 ) {
 
                     link.classList.add("active");
@@ -1538,10 +1556,17 @@
 
             });
 
-        });
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateActiveNavigation
+        );
+
+
+        updateActiveNavigation();
 
     </script>
 
 </body>
-
-</html>
